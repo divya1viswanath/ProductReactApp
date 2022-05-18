@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import Addproduct from './component/Addproduct';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Search from './component/Search';
+import Viewproduct from './component/Viewproduct';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/'exact element={<Addproduct/>}/>
           <Route path='/search'exact element={<Search/>}/>
+          <Route path='/viewpro'exact element={<Viewproduct/>}/>
         </Routes>                                                                                   
       </BrowserRouter>
     </>
